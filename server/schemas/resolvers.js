@@ -1,12 +1,12 @@
 const { Music, User } = require('../models');
 
 const resolvers = {
-  Query: {
+  // Query: {
  
-  },
-  Mutation: {
+  // },
+  // Mutation: {
 
-  }
+  // },
 };
 
 module.exports = resolvers;

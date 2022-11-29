@@ -21,12 +21,9 @@ const typeDefs = gql`
   }
 
   type Query {
-
+    music: [Music]
   }
 
-  type Mutation {
-   
-  }
 `;
 
 module.exports = typeDefs;
