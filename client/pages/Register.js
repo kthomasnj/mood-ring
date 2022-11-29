@@ -1,19 +1,38 @@
-export const Register = () => {
+import React, { useState } from 'react';
+
+export const Register = (props) => {
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+    }
+
+
     return (
-        <>Register</>
+        <>
+        <form onSubmit={handleSubmit}>
+                <label>First Name</label>
+                <input value={firstName} onChange={(e) => setfirstName(e.target.value)}type='username' placeholder='username' id='username' name='username' />
+                <label for='password'>Password</label>
+                <input value={password} onChange={(e) => setPassword(e.target.value)}type='password' placeholder='' id='password' name='password' />
+                </form>
+                <button onClick={props.onFormSwitch}>Login</button>
+          
+        </>
     )
 }
 
 
-// import React, { useState } from 'react';
+
 // export default function Form() {
 
 // // States for registration
-// const [userName, setUserName] = useState('');
-// const [password, setPassword] = useState('');
-// const [firstName, setFirstName] = useState('');
-// const [lastName, setLastName] = useState('');
-// const [email, setEmail] = useState('');
+
 
 
 // // States for checking the errors
