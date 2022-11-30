@@ -16,15 +16,19 @@ export const Register = (props) => {
         <>
         <form onSubmit={handleSubmit}>
             <label>Username</label>
+<<<<<<< HEAD
+            <input value={userName} onChange={(e) => setUserName(e.target.value)}type='username' placeholder='' id='username' name='username' />
+=======
             <input value={userName} onChange={(e) => setUserName(e.target.value)}type='username' placeholder='username' id='username' name='username' />
+>>>>>>> ed9aa25e3745185f7a343d06a5df14bca09af046
             <label type='password'>Password</label>
             <input value={password} onChange={(e) => setPassword(e.target.value)}type='password' placeholder='' id='password' name='password' />
             <label>First Name</label>
-            <input value={firstName} onChange={(e) => setFirstName(e.target.value)}type='firstname' placeholder='firstname' id='firstname' name='firstname' />
+            <input value={firstName} onChange={(e) => setFirstName(e.target.value)}type='firstname' placeholder='' id='firstname' name='firstname' />
             <label>Last Name</label>
-            <input value={lastName} onChange={(e) => setLastName(e.target.value)}type='lastname' placeholder='lastname' id='lastname' name='lastname' />
+            <input value={lastName} onChange={(e) => setLastName(e.target.value)}type='lastname' placeholder='' id='lastname' name='lastname' />
             <label>Email</label>
-            <input value={email} onChange={(e) => setEmail(e.target.value)}type='email' placeholder='email' id='email' name='email' />  
+            <input value={email} onChange={(e) => setEmail(e.target.value)}type='email' placeholder='' id='email' name='email' />  
         </form>
             <button onClick={() => props.onFormSwitch('login')}>Login</button>
           
