@@ -1,4 +1,4 @@
-import React, { useState } from 'React';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Login } from '../pages/Login';
