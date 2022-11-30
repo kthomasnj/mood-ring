@@ -21,7 +21,7 @@ export const Login = (props) => {
             
             </form>
 
-            <link onClick={props.onFormSwitch}>Don't have an account? Click here to register.</link>
+            <link onClick={() => props.onFormSwitch('register')}>Don't have an account? Click here to register.</link>
         </>
     )
 
