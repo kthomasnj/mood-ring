@@ -21,8 +21,10 @@
     "url": "https://github.com/kthomasnj/mood-ring/issues"
   },
   "homepage": "https://github.com/kthomasnj/mood-ring#readme",
-
   "devDependencies": {
     "concurrently": "^5.3.0"
+  },
+  "dependencies": {
+    "use-sound": "^4.0.1"
   }
 }

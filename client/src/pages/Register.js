@@ -16,11 +16,8 @@ export const Register = (props) => {
         <>
         <form onSubmit={handleSubmit}>
             <label>Username</label>
-<<<<<<< HEAD
             <input value={userName} onChange={(e) => setUserName(e.target.value)}type='username' placeholder='' id='username' name='username' />
-=======
             <input value={userName} onChange={(e) => setUserName(e.target.value)}type='username' placeholder='username' id='username' name='username' />
->>>>>>> ed9aa25e3745185f7a343d06a5df14bca09af046
             <label type='password'>Password</label>
             <input value={password} onChange={(e) => setPassword(e.target.value)}type='password' placeholder='' id='password' name='password' />
             <label>First Name</label>
