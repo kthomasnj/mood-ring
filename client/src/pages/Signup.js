@@ -39,6 +39,17 @@ const Signup = () => {
   };
 
   return (
+    <body>
+        <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+      <div className="container flex-row justify-space-between-lg justify-center align-center">
+        <div>
+          <Link className="text-light" to="/">
+            <h1 className="m-0">Mood Ring</h1>
+          </Link>
+          <p className="m-0">Sit back and Relax!</p>
+        </div>
+      </div>
+    </header>
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
@@ -94,6 +105,7 @@ const Signup = () => {
         </div>
       </div>
     </main>
+    </body>
   );
 };
 
