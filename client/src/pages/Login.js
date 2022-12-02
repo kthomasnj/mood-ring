@@ -50,6 +50,11 @@ const Login = (props) => {
           </Link>
           <p className="m-0">Sit back and Relax!</p>
         </div>
+        <div>
+        <Link className="btn btn-lg btn-light m-2" to="/signup">
+          Signup
+        </Link>
+      </div>
       </div>
     </header>
     <main className="flex-row justify-center mb-4">

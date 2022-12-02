@@ -48,6 +48,11 @@ const Signup = () => {
           </Link>
           <p className="m-0">Sit back and Relax!</p>
         </div>
+        <div>
+          <Link className="btn btn-lg btn-info m-2" to="/login">
+            Login
+          </Link>
+        </div>
       </div>
     </header>
     <main className="flex-row justify-center mb-4">
