@@ -39,7 +39,7 @@ function MoodSelect (){
             >
                 <option value="sad">Sad</option>
                 <option value="happy">Happy</option>
-                <option value="depressed">Depressed</option>
+                <option value="angry">Angry</option>
             </select>
         <button type="submit" class="btn btn-primary">Play</button>
         {/* <p>{mood}</p>  */}
