@@ -9,8 +9,6 @@ function MoodSelect (){
       const selectedMood={mood};
       console.log(selectedMood.mood);
       if(selectedMood.mood=='sad'){
-        
-        
         document.body.style.backgroundColor = "#1515b6";
       }
       else if(selectedMood.mood=='happy'){
