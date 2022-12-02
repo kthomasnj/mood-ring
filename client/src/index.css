@@ -1715,4 +1715,22 @@ label form [type='radio'] {
   width: 100%;
   align-items: center;
   gap:10px;
+  font-family: Arial;
+  margin-top: 100px;
+}
+
+.mood-select label {
+  font-size: 50px;
+  font-family: "Fantasy", copperplate;
+  
+}
+
+
+
+.mood-select select {
+  width:200px;
+  text-align: center;
+  height: 30px;
+  border-radius: 1rem;
+  
 }
