@@ -6,13 +6,22 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    music: [Music]!
+    thoughts: [Thought]!
   }
 
-  type Music {
+  type Thought {
     _id: ID
-    url: String
-    genre: String
+    thoughtText: String
+    thoughtAuthor: String
+    createdAt: String
+    comments: [Comment]!
+  }
+
+  type Comment {
+    _id: ID
+    commentText: String
+    commentAuthor: String
+    createdAt: String
   }
 
   type Auth {
@@ -21,9 +30,17 @@ const typeDefs = gql`
   }
 
   type Query {
-    music: [Music]
+    users: [User]
+    user(username: String!): User
+    thoughts(username: String): [Thought]
+    thought(thoughtId: ID!): Thought
+    me: User
   }
 
+  type Mutation {
+    addUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+  }
 `;
 
 module.exports = typeDefs;
