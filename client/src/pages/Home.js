@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MoodSelect from '../components/MoodSelect';
 
 import Auth from '../utils/auth';
 
@@ -9,6 +10,7 @@ const Home = () => {
     Auth.logout();
   };
   return (
+    <div>
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
@@ -40,6 +42,9 @@ const Home = () => {
         </div>
       </div>
     </header>
+    <MoodSelect />
+    </div>
+
   );
 };
 
