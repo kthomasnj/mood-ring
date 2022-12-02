@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mood-ring',
+  process.env.MONGODB_URI || 'mongodb+srv://project3:password1234567890@cluster0.tqcywtd.mongodb.net/mood-ring',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
