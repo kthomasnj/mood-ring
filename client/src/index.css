@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0;
+  background:#e7e7e7
 }
 
 /**
@@ -161,6 +162,7 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
+  display: block;
 }
 
 /**
@@ -1137,7 +1139,7 @@ form select {
 
 form label,
 form .form-label {
-  display: inline-block;
+  display: block;
   font-size: 1.2rem;
   margin: 0.625rem 0 0.25rem 0.3rem;
 }
@@ -1705,4 +1707,12 @@ label form [type='radio'] {
   .align-content-center-xl {
     align-content: center;
   }
+}
+
+.mood-select{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap:10px;
 }
