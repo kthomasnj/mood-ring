@@ -12,8 +12,13 @@ function MoodSelect (){
         console.log("mood is sad");
         document.body.style.backgroundColor = "maroon";
       }
-      else if(selectedMood.mood=='happy')
-        document.body.style.backgroundColor = "green";
+      else if(selectedMood.mood=='happy'){
+        document.body.style.cssText = 
+        `background: green;
+         transition: all 1s ease;
+         WebkitTransition: all 1s ease;
+         MozTransition: all 1s ease;`;
+      }
     }
   return (
     <div>
