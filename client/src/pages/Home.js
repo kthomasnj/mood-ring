@@ -14,7 +14,7 @@ const Home = () => {
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
-          <Link className="text-light" to="/">
+          <Link style={{textDecoration: 'none'}} className="text-light" to="/">
             <h1 className="m-0 title-animation">MOOD RING</h1>
           </Link>
           <p className="m-0 title-header">Sit back and Relax</p>
@@ -22,20 +22,20 @@ const Home = () => {
         <div>
           {Auth.loggedIn() ? (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/me">
+              <Link style={{textDecoration: 'none'}} className="m-2 login-header" to="/me">
                 {Auth.getProfile().data.username}'s profile
               </Link>
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
-                Logout
+              <button className="btn btn-light m-2 logout-header" onClick={logout}>
+                SIGN OUT
               </button>
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/login">
-                Login
+              <Link style={{textDecoration: 'none'}} className="m-2 login-header" to="/login">
+                LOGIN
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/signup">
-                Signup
+              <Link style={{textDecoration: 'none'}} className="m-2 signup-header" to="/signup">
+                SIGN UP
               </Link>
             </>
           )}
