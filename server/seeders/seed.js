@@ -9,20 +9,11 @@ db.once('open', async () => {
     await User.deleteMany({});
 
     await User.create(userSeeds);
-    await Music.create(musicSeeds);
-
-    // for (let i = 0; i < musicSeeds.length; i++) {
-    //   const { _id, thoughtAuthor } = await Music.create(musicSeeds[i]);
-    //   const user = await User.findOneAndUpdate(
-    //     { username: thoughtAuthor },
-    //     {
-    //       $addToSet: {
-    //         thoughts: _id,
-    //       },
-    //     }
-    //   );
-    // }
-  } catch (err) {
+    // await Music.create(musicSeeds);
+    process.exit(0);
+  } 
+  
+  catch (err) {
     console.error(err);
     process.exit(1);
   }
