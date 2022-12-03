@@ -30,7 +30,7 @@ function MoodSelect (){
     <div>
         <form onSubmit={handleSubmit}>
           <div class='mood-select'>
-            <label>I am Feeling</label>
+            <label>I am feeling...</label>
             <select 
             value={mood}
             onChange={(e)=>setMood(e.target.value)}
