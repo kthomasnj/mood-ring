@@ -46,7 +46,7 @@ const Signup = () => {
           <Link style={{textDecoration: 'none'}} className="text-light" to="/">
             <h1 className="m-0 title-animation">MOOD RING</h1>
           </Link>
-          <p className="m-0 title-header">Sit back and Relax</p>
+          <p className="m-0 title-header">sit back and relax</p>
         </div>
         <div>
           <Link style={{textDecoration: 'none'}} className="m-2 login-header" to="/login">
@@ -57,8 +57,8 @@ const Signup = () => {
     </header>
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
+        <div className="card login-card">
+          <h4 className="card-header text-center text-light p-2 login-card">Sign Up</h4>
           <div className="card-body">
             {data ? (
               <p>
@@ -69,7 +69,7 @@ const Signup = () => {
               <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
-                  placeholder="Your username"
+                  placeholder="Username"
                   name="username"
                   type="text"
                   value={formState.name}
@@ -77,7 +77,7 @@ const Signup = () => {
                 />
                 <input
                   className="form-input"
-                  placeholder="Your email"
+                  placeholder="Email"
                   name="email"
                   type="email"
                   value={formState.email}

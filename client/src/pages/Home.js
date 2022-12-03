@@ -17,7 +17,7 @@ const Home = () => {
           <Link style={{textDecoration: 'none'}} className="text-light" to="/">
             <h1 className="m-0 title-animation">MOOD RING</h1>
           </Link>
-          <p className="m-0 title-header">Sit back and Relax</p>
+          <p className="m-0 title-header">sit back and relax</p>
         </div>
         <div>
           {Auth.loggedIn() ? (

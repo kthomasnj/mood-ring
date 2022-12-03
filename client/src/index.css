@@ -437,6 +437,8 @@ dl {
 .title-header {
   font-family: 'Comfortaa', cursive;
   letter-spacing: 2px;
+  font-size: 15px;
+  text-align: center;
   color: white;
 }
 
@@ -466,6 +468,9 @@ dl {
   letter-spacing: 2px;
 }
 
+.login-card {
+  border-radius: 9px;
+}
 
 label {
   display: inline-block;
