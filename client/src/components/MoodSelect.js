@@ -100,7 +100,7 @@ document.body.style.backgroundImage=`url(${happy})`
          motivatedBeat.pause();
          excitedBeat.play();
     } else {
-      document.body.style.cssText = `background: #9c546e;
+      document.body.style.cssText = `background: maroon;
          transition: all 1s ease;
          WebkitTransition: all 1s ease;
          MozTransition: all 1s ease;`;
