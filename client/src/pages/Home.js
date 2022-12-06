@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MoodSelect from '../components/MoodSelect';
+import useSound from 'use-sound';
 
 import Auth from '../utils/auth';
 
