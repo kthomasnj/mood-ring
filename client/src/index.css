@@ -470,6 +470,11 @@ dl {
 
 .login-card {
   border-radius: 9px;
+  padding-top: 130px;
+}
+
+.login-card h4 {
+  font-family: 'Nova Mono', monospace;
 }
 
 label {

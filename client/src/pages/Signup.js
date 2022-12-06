@@ -40,26 +40,28 @@ const Signup = () => {
 
   return (
     <body>
-        <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+        <header className="bg-dark text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <div>
+        <div className='pl-5 pr-5'>
           <Link style={{textDecoration: 'none'}} className="text-light" to="/">
-            <h1 className="m-0 title-animation">MOOD RING</h1>
+            <h1 className="m-0 col-sm-12 title-animation">MOOD RING</h1>
           </Link>
           <p className="m-0 title-header">sit back and relax</p>
         </div>
-        <div>
-          <Link style={{textDecoration: 'none'}} className="m-2 login-header" to="/login">
-            LOGIN
-          </Link>
+        <div className='flex-row'>
+          <div className='col-sm-12 my-4 pl-5 pr-5'>
+            <Link style={{textDecoration: 'none'}} className="m-2 login-header" to="/login">
+              LOGIN
+            </Link>
+          </div>
         </div>
       </div>
     </header>
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
-        <div className="card login-card">
-          <h4 className="card-header text-center text-light p-2 login-card">Sign Up</h4>
-          <div className="card-body">
+        <div className="login-card">
+          <h4 className=" text-center p-2 login-card">SIGN UP</h4>
+          <div className="card-body text-center">
             {data ? (
               <p>
                 Success! You may now head{' '}
@@ -92,7 +94,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <button
-                  className="btn btn-block btn-primary"
+                  className="btn btn-dark text-white"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
@@ -115,3 +117,4 @@ const Signup = () => {
 };
 
 export default Signup;
+
