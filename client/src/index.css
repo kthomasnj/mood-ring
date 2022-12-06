@@ -1780,14 +1780,13 @@ label form [type='radio'] {
   align-items: center;
   gap:10px;
   font-family: 'Maven Pro', sans-serif;
-  padding-top: 175px;
+  padding-top: 195px;
 }
 
 .mood-select label {
-  font-size: 40px;
-  font-family: 'Nova Mono', monospace;
+  font-size: 30px;
+  font-family: 'Comfortaa', cursive;
   font-weight: 500;
-  padding-bottom: 20px;
 }
 
 .mood-select select {
