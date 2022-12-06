@@ -110,7 +110,7 @@ document.body.style.backgroundImage=`url(${happy})`
          motivatedBeat.pause();
          relaxedBeat.pause();
          angryBeat.play();
-         document.body.style.backgroundImage=`url(${excited})`
+        //  document.body.style.backgroundImage=`url(${excited})`
     }
   };
   return (
