@@ -14,6 +14,9 @@ depending on the mood that was chosen.
 
 
 # Screenshots 
+https://drive.google.com/file/d/1Yobt7kKwxiUhhcze7w6SDi2_0gCMZGLY/view
+https://drive.google.com/file/d/1vzy7Lkz5iavN7Dj1ANJXABfsfoBltTzn/view
+https://drive.google.com/file/d/13wV32u80waeYHMUm8qIFz2mAfjwV7GUC/view 
 
 # Technologies Used 
 * CSS
