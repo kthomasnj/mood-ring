@@ -3,7 +3,10 @@
 # Description 
 Feeling down? Happy? Frustrated? Mood Ring is here to help! Whether you wish to stay in that feeling, or change it, we have your back. Log in, choose your desired mood and our app will create a mood board that fits your desired emotion.
 
+
 # User Story 
+```md
+
 wHEN a USER opens the website
 THEN a guide will be displayed as well as the option to Log in or Sign up.
 WHEN USER logs in or signs up
@@ -11,7 +14,7 @@ THEN a dropdown menu of moods/emoji appears.
 WHEN a USER chooses a mood/emoji
 THEN the background color of the website changes to reflect the mood. Music is played 
 depending on the mood that was chosen.
-
+```
 
 # Screenshots 
 https://drive.google.com/file/d/1Yobt7kKwxiUhhcze7w6SDi2_0gCMZGLY/view
