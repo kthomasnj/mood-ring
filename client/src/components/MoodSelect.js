@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
+import useSound from 'use-sound';
 // document.body.style.backgroundColor = "maroon";
 
 function MoodSelect (){
     const [mood, setMood]=useState('sad');
+    // const url='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+    // const [playSound] = useSound({url});
+
+    let beat = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
 
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -10,6 +15,8 @@ function MoodSelect (){
       console.log(selectedMood.mood);
       if(selectedMood.mood=='sad'){
         document.body.style.backgroundColor = "#1515b6";
+        beat.play();
+
       }
       else if(selectedMood.mood=='happy'){
         document.body.style.cssText = 

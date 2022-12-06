@@ -6,7 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    thoughts: [Thought]!
+    music: [Music]!
   }
 
   type Thought {
@@ -15,6 +15,12 @@ const typeDefs = gql`
     thoughtAuthor: String
     createdAt: String
     comments: [Comment]!
+  }
+
+  type Music {
+    _id: ID
+    url: String
+    genre: String
   }
 
   type Comment {
@@ -35,6 +41,7 @@ const typeDefs = gql`
     thoughts(username: String): [Thought]
     thought(thoughtId: ID!): Thought
     me: User
+    music: [Music]
   }
 
   type Mutation {

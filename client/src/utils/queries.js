@@ -6,10 +6,10 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      thoughts {
+      music {
         _id
-        thoughtText
-        createdAt
+        url
+        genre
       }
     }
   }
@@ -21,12 +21,21 @@ export const QUERY_ME = gql`
       _id
       username
       email
-      thoughts {
+      music {
         _id
-        thoughtText
-        thoughtAuthor
-        createdAt
+        url
+        genre
       }
+    }
+  }
+`;
+
+export const QUERY_MUSIC = gql`
+  query getMusic {
+    music {
+        _id
+        url
+        genre
     }
   }
 `;
