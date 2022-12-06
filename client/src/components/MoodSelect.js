@@ -9,15 +9,28 @@ import excited from "../images/excited.jpeg";
 import angry from "../images/inferno.jpg";
 import Auth from "../utils/auth";
 
+const sadMusic=[
+  'https://audio.jukehost.co.uk/IAqD1FlwpP3a2MMuxtHJrEfARC0u5HGd',
+  'https://audio.jukehost.co.uk/HlofiKkXImBK0IwKNwZ7nps9TclwO08u',
+  'https://audio.jukehost.co.uk/A1hGMWNRQAgOa1KCsHZftQFewSTuk5LL'
+];
+const happyMusic=[
+  'https://audio.jukehost.co.uk/GXlP1xtudBiG2JSNbVA15s9Rerq84UDS',
+  'https://audio.jukehost.co.uk/M1FR6RQEscqqrRgljlnmFQjuVrNUYTIs',
+  'https://audio.jukehost.co.uk/FxEiYIDongISSsAx1tn4F4JUftdDGs60'
+];
+const angryMusic=[
+  'https://audio.jukehost.co.uk/lA7eJ6dAnYQSkXZMrsLZWCS42mURfS8t',
+  'https://audio.jukehost.co.uk/EGeBvXSNisz7mR49NzaRuRekM1drFnsR',
+  'https://audio.jukehost.co.uk/cUvDDfA4rbMQrs1Poq9qc08QL4GJFFoX'
+];
+
+let sadBeat = new Audio(sadMusic[0]);
+let happyBeat = new Audio(happyMusic[0]);
+let angryBeat = new Audio(angryMusic[0]);
+
 function MoodSelect() {
   const [mood, setMood] = useState("sad");
-  // const url='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
-  // const [playSound] = useSound({url});
-
-  let beat = new Audio(
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  );
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,14 +38,20 @@ function MoodSelect() {
     console.log(selectedMood.mood);
     if (selectedMood.mood == "sad") {
       document.body.style.backgroundColor = "#6c89cc";
+      happyBeat.pause();
+      angryBeat.pause();
+      sadBeat.play();
       
-      beat.play();
     } else if (selectedMood.mood == "happy") {
       document.body.style.cssText = `background: #f2e09b;
         background-image: ${happy}; 
          transition: all 1s ease;
          WebkitTransition: all 1s ease;
          MozTransition: all 1s ease;`;
+         sadBeat.pause();
+         angryBeat.pause();
+         happyBeat.play();
+
     } else if (selectedMood.mood == "relaxed") {
       document.body.style.cssText = `background: #c180d1;
          transition: all 1s ease;
@@ -53,6 +72,9 @@ function MoodSelect() {
          transition: all 1s ease;
          WebkitTransition: all 1s ease;
          MozTransition: all 1s ease;`;
+         sadBeat.pause();
+         happyBeat.pause();
+         angryBeat.play();
     }
   };
   return (
