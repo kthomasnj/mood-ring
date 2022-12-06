@@ -18,6 +18,7 @@ function MoodSelect() {
     "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
   );
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const selectedMood = { mood };
@@ -60,7 +61,7 @@ function MoodSelect() {
         <>
           <div>
             <form onSubmit={handleSubmit}>
-              <div class="mood-select">
+              <div className="mood-select">
                 <label>I am feeling...</label>
                 <select value={mood} onChange={(e) => setMood(e.target.value)}>
                   <option value="sad">Sad</option>
@@ -70,7 +71,7 @@ function MoodSelect() {
                   <option value="excited">Excited</option>
                   <option value="angry">Angry</option>
                 </select>
-                <button type="submit" class="btn btn-dark text-white">
+                <button type="submit" className="btn btn-dark text-white">
                   Play
                 </button>
                 {/* <p>{mood}</p>  */}
