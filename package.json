@@ -1,6 +1,9 @@
 {
   "name": "mood-ring",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.18.1"
+  },
   "description": "",
   "main": "server/server.js",
   "scripts": {

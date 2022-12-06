@@ -62,6 +62,10 @@ function App() {
                 path="/signup" 
                 element={<Signup />}
               />
+               <Route 
+                path="/me" 
+                element={<Profile />}
+              />
             </Routes>
           </div>
           {/* <Footer /> */}

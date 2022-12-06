@@ -1780,14 +1780,13 @@ label form [type='radio'] {
   align-items: center;
   gap:10px;
   font-family: 'Maven Pro', sans-serif;
-  padding-top: 175px;
+  padding-top: 195px;
 }
 
 .mood-select label {
-  font-size: 40px;
-  font-family: 'Nova Mono', monospace;
+  font-size: 30px;
+  font-family: 'Comfortaa', cursive;
   font-weight: 500;
-  padding-bottom: 20px;
 }
 
 .mood-select select {
@@ -1813,6 +1812,28 @@ label form [type='radio'] {
 .home-instructions h1, h3 {
   font-family: 'Nova Mono', monospace;
   font-weight: 500;
+}
+
+.my-profile-1 {
+  padding-bottom: 25px;
+}
+
+.my-profile {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+}
+
+.my-favorites {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
+}
+
+.saved-moods {
+  border-bottom-style: dashed;
+  border-width: thin;
+  padding-top: 20px;
+  font-style: italic;
+  font-family: 'Comfortaa', cursive;
 }
 
 .home-instructions span {
