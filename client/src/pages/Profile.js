@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams, Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 
@@ -34,6 +34,24 @@ const Profile = () => {
   }
 
   return (
+    <body>
+      <header className="bg-dark text-light mb-4 py-3 flex-row align-center">
+        <div className="container flex-row justify-space-between-lg justify-center align-center">
+          <div className='pl-5 pr-5'>
+            <Link style={{textDecoration: 'none'}} className="text-light" to="/">
+              <h1 className="m-0 col-sm-12 title-animation">MOOD RING</h1>
+            </Link>
+            <p className="m-0 title-header">sit back and relax</p>
+          </div>
+          <div className='flex-row'>
+            <div className='col-sm-12 my-4 pl-5 pr-5'>
+            <Link style={{textDecoration: 'none'}} className="m-2 login-header" to="/">
+              HOME
+            </Link>
+            </div>
+          </div>
+        </div>
+      </header>
     <div>
       <div className="flex-row justify-center mb-3">
         <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
@@ -52,6 +70,7 @@ const Profile = () => {
         )}
       </div>
     </div>
+    </body>
   );
 };
 
