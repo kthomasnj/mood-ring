@@ -28,6 +28,7 @@ https://drive.google.com/file/d/1z7OY4A-ipsZtAxQLdwrsIdErzFMU1VH3/view
 * Node.js 
 * Express.js 
 * Heroku
+* Jukebox
 * Bootstrap
 * use-sound
 * web-vitals
