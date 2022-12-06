@@ -35,12 +35,13 @@ function MoodSelect() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const selectedMood = { mood };
-    console.log(selectedMood.mood);
+    console.log("selectedMood.mood", selectedMood.mood, "happy", happy);
     if (selectedMood.mood == "sad") {
       document.body.style.backgroundColor = "#6c89cc";
       happyBeat.pause();
       angryBeat.pause();
       sadBeat.play();
+      document.body.style.backgroundImage=`url(${sad})`
       
     } else if (selectedMood.mood == "happy") {
       document.body.style.cssText = `background: #f2e09b;
@@ -51,7 +52,7 @@ function MoodSelect() {
          sadBeat.pause();
          angryBeat.pause();
          happyBeat.play();
-
+document.body.style.backgroundImage=`url(${happy})`
     } else if (selectedMood.mood == "relaxed") {
       document.body.style.cssText = `background: #c180d1;
          transition: all 1s ease;
@@ -75,6 +76,7 @@ function MoodSelect() {
          sadBeat.pause();
          happyBeat.pause();
          angryBeat.play();
+         document.body.style.backgroundImage=`url(${excited})`
     }
   };
   return (
