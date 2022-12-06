@@ -35,6 +35,12 @@ https://drive.google.com/file/d/1z7OY4A-ipsZtAxQLdwrsIdErzFMU1VH3/view
 * WHEN USER can “favorite” the mood board by clicking the heart button
 * THEN “My Favorites” tab will show the USER his/her past favorite moods.
 * All of the USER’S chosen moods are saved on the “Past Moods” tab.
+* WHEN Given users an option to choose a Desired Mood
+* THEN the mood from I’m sad will change to I want to be happy
+* WHEN USER has a mood
+* THEN it can be shared to a social media platform
+
+
 
 # Links
 Deployed URL - https://mood-ring.herokuapp.com/
