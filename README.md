@@ -27,9 +27,10 @@ https://drive.google.com/file/d/1z7OY4A-ipsZtAxQLdwrsIdErzFMU1VH3/view
 * Javascript
 * Node.js 
 * Express.js 
-* MongoDB
 * Heroku
-* Postgres DB
+* Bootstrap
+* use-sound
+* web-vitals
 
 # Future Development 
 * WHEN USER can “favorite” the mood board by clicking the heart button
