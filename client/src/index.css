@@ -1815,6 +1815,28 @@ label form [type='radio'] {
   font-weight: 500;
 }
 
+.my-profile-1 {
+  padding-bottom: 25px;
+}
+
+.my-profile {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+}
+
+.my-favorites {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
+}
+
+.saved-moods {
+  border-bottom-style: dashed;
+  border-width: thin;
+  padding-top: 20px;
+  font-style: italic;
+  font-family: 'Comfortaa', cursive;
+}
+
 .home-instructions span {
   background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
   background-size: 400%;
