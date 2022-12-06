@@ -29,10 +29,10 @@ https://drive.google.com/file/d/1sSgle_eRYU2iN_XXjpNpT3JSeI6G-snp/view
 * Postgres DB
 
 # Future Development 
-WHEN USER can “favorite” the mood board by clicking the heart button
-THEN “My Favorites” tab will show the USER his/her past favorite moods.
-All of the USER’S chosen moods are saved on the “Past Moods” tab.
-A USER can log out when desired.
+* WHEN USER can “favorite” the mood board by clicking the heart button
+* THEN “My Favorites” tab will show the USER his/her past favorite moods.
+* All of the USER’S chosen moods are saved on the “Past Moods” tab.
+* A USER can log out when desired.
 
 
 # Links
