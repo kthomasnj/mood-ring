@@ -17,10 +17,10 @@ depending on the mood that was chosen.
 ```
 
 # Screenshots 
-https://drive.google.com/file/d/1Yobt7kKwxiUhhcze7w6SDi2_0gCMZGLY/view
-https://drive.google.com/file/d/13wV32u80waeYHMUm8qIFz2mAfjwV7GUC/view
-https://drive.google.com/file/d/1IvEpDrnTfRxPIHn6dHAvE3Hvr467LZ1I/view
-https://drive.google.com/file/d/1sSgle_eRYU2iN_XXjpNpT3JSeI6G-snp/view
+https://drive.google.com/file/d/1sOp-sCibZThiLIR6pCMUNBtn1ouvii38/view
+https://drive.google.com/file/d/1Onbwkg7Tipu2uTOluzJbldoA4U6Jna5f/view
+https://drive.google.com/file/d/1FmVzG7dfOkncf9Bubjc78EhMU3lhPuy-/view
+https://drive.google.com/file/d/1z7OY4A-ipsZtAxQLdwrsIdErzFMU1VH3/view
 
 # Technologies Used 
 * CSS
