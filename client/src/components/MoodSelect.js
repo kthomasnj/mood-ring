@@ -27,6 +27,9 @@ const angryMusic=[
 
 let sadBeat = new Audio(sadMusic[0]);
 let happyBeat = new Audio(happyMusic[0]);
+let relaxedBeat = new Audio('https://audio.jukehost.co.uk/nd072zjDo748BtKWpEMdbt9gjxiPBCEI');
+let motivatedBeat = new Audio(happyMusic[1]);
+let excitedBeat = new Audio(happyMusic[2])
 let angryBeat = new Audio(angryMusic[0]);
 
 function MoodSelect() {
@@ -39,6 +42,9 @@ function MoodSelect() {
     if (selectedMood.mood == "sad") {
       document.body.style.backgroundColor = "#6c89cc";
       happyBeat.pause();
+      excitedBeat.pause();
+      motivatedBeat.pause();
+      relaxedBeat.pause();
       angryBeat.pause();
       sadBeat.play();
       
@@ -50,6 +56,9 @@ function MoodSelect() {
          MozTransition: all 1s ease;`;
          sadBeat.pause();
          angryBeat.pause();
+         excitedBeat.pause();
+         motivatedBeat.pause();
+         relaxedBeat.pause();
          happyBeat.play();
 
     } else if (selectedMood.mood == "relaxed") {
@@ -57,16 +66,38 @@ function MoodSelect() {
          transition: all 1s ease;
          WebkitTransition: all 1s ease;
          MozTransition: all 1s ease;`;
+         sadBeat.pause();
+         angryBeat.pause();
+         excitedBeat.pause();
+         motivatedBeat.pause();
+         happyBeat.pause();
+         relaxedBeat.play();
+         
     } else if (selectedMood.mood == "motivated") {
       document.body.style.cssText = `background: #de9c73;
          transition: all 1s ease;
          WebkitTransition: all 1s ease;
          MozTransition: all 1s ease;`;
+         sadBeat.pause();
+         angryBeat.pause();
+         excitedBeat.pause();
+         relaxedBeat.pause();
+         happyBeat.pause();
+         motivatedBeat.play();
+         
+         
     } else if (selectedMood.mood == "excited") {
       document.body.style.cssText = `background: #de6f6f;
          transition: all 1s ease;
          WebkitTransition: all 1s ease;
          MozTransition: all 1s ease;`;
+         sadBeat.pause();
+         angryBeat.pause();
+         
+         relaxedBeat.pause();
+         happyBeat.pause();
+         motivatedBeat.pause();
+         excitedBeat.play();
     } else {
       document.body.style.cssText = `background: #9c546e;
          transition: all 1s ease;
@@ -74,6 +105,9 @@ function MoodSelect() {
          MozTransition: all 1s ease;`;
          sadBeat.pause();
          happyBeat.pause();
+         excitedBeat.pause();
+         motivatedBeat.pause();
+         relaxedBeat.pause();
          angryBeat.play();
     }
   };
